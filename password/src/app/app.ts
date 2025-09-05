@@ -1,10 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Home } from './views/home/home';
+import { Cadastro1 } from './views/cadastro-1/cadastro-1';
 
 @Component({
+  // selector: 'app-root',
+  // imports: [Home],
+  // templateUrl: './app.html',
+  // styleUrl: './app.scss'
+
   selector: 'app-root',
-  imports: [Home],
+  imports: [Cadastro1],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
