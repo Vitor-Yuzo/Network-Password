@@ -7,7 +7,7 @@ import { Dashboard } from './views/dashboard/dashboard';
 
 @Component({
   selector: 'app-root',
-  imports: [Cadastro2],
+  imports: [Cadastro1],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 
