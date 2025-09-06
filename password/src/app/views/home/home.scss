@@ -16,7 +16,7 @@ body {
   background: #fff;
   border-radius: 20px;
   padding: 60px 40px;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ body {
   color: #1e2772;
   margin-bottom: 40px;
   line-height: 1.2;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Formulário */
@@ -78,7 +78,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 12px 24px rgba(253, 116, 1, 0.3);
+  // box-shadow: 0px 12px 24px rgba(253, 116, 1, 0.3);
   transition: background 0.2s ease, transform 0.1s ease;
 
   &:hover {
