@@ -16,10 +16,10 @@ import { Dashboard } from './views/dashboard/dashboard';
   // templateUrl: './app.html',
   // styleUrl: './app.scss'
 
-//   selector: 'app-root',
-//   imports: [Cadastro1],
-//   templateUrl: './app.html',
-//   styleUrl: './app.scss'
+  // selector: 'app-root',
+  // imports: [Cadastro1],
+  // templateUrl: './app.html',
+  // styleUrl: './app.scss'
 
   // selector: 'app-root',
   // imports: [Cadastro2],
