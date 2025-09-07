@@ -7,7 +7,7 @@
 
   <!-- Formulário de cadastro -->
   <section class="cadastro-form-section">
-    <form class="form-cadastro">
+    <form class="form-cadastro" [formGroup]="passwordForm" (ngSubmit)="registerPassword()">
       <!-- Campo nome da plataforma -->
       <div class="form-group">
         <label for="plataforma">Nome da Plataforma</label>
@@ -16,6 +16,7 @@
           id="plataforma"
           name="plataforma"
           placeholder="Ex: Netflix, Google..."
+          formControlName="plataform"
           required
         />
       </div>
@@ -28,6 +29,7 @@
           id="senha"
           name="senha"
           placeholder="Digite sua senha"
+          formControlName="password"
           required
         />
       </div>

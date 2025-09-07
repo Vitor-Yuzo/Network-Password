@@ -10,29 +10,24 @@
 
   <!-- Formulário -->
   <section class="cadastro-form-section">
-    <form class="form-cadastro">
-      <!-- Nome completo -->
-      <div class="form-group">
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-      </div>
-
+    <form class="form-cadastro" [formGroup]="registerForm" (ngSubmit)="register()">
+    
       <!-- Email -->
       <div class="form-group">
-        <label for="email">Endereço de e-mail</label>
-        <input type="email" id="email" name="email" placeholder="alex@email.com" required>
+        <label>Endereço de e-mail</label>
+        <input type="email"formControlName="email" placeholder="Digite seu email" required>
       </div>
 
       <!-- Senha -->
       <div class="form-group">
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        <label>Senha</label>
+        <input type="password" formControlName="password" placeholder="Digite sua senha" required>
       </div>
 
       <!-- Confirmar senha -->
       <div class="form-group">
-        <label for="confirmar-senha">Repita a senha</label>
-        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita sua senha" required>
+        <label>Repita a senha</label>
+        <input type="password" formControlName="confirmPassword" placeholder="Repita sua senha" required>
       </div>
 
       <!-- Ações -->
