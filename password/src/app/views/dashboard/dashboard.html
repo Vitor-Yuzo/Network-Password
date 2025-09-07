@@ -16,7 +16,7 @@
   <p class="titulo">Suas senhas</p>
 
   <!-- Tabela de senhas -->
-  <section class="tabela-container">
+  <section *ngIf="!loading" class="tabela-container">
   <table class="tabela-senhas">
     <thead>
       <tr>
@@ -30,12 +30,14 @@
         <td>{{ item.platform }}</td>
         <td>{{ item.strongPassword }}</td>
         <td>
-          <img src="assets/images/copiar.png" alt="Copiar" class="icon" (click)="copyPassword(item.StrongPassword)" />
+          <img src="assets/images/copiar.png" alt="Copiar" class="icon" (click)="copyPassword(item.strongPassword)" />
         </td>
       </tr>
     </tbody>
   </table>
 </section>
+
+<p *ngIf="loading">Carregando senhas...</p>
 
   <!-- Botão registrar nova senha -->
   <div class="registrar-container">
