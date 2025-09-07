@@ -1,24 +1,21 @@
-/* Centralização da tela */
-body {
-  margin: 0;
+:host {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #f1f3f6;
+  height: 100vh; // ocupa toda a altura da tela
+  background: #f1f3f6; // mantém o fundo cinza clarinho
   font-family: 'Poppins', sans-serif;
 }
 
-/* Container principal */
 .login-container {
   width: 100%;
   max-width: 480px;
   background: #fff;
   border-radius: 20px;
   padding: 60px 40px;
-  // box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 /* Título */
 .login-titulo {

@@ -1,9 +1,9 @@
-/* Reset e base */
-body {
+:host {
   margin: 0;
   background: #f1f3f6;
   font-family: 'Poppins', sans-serif;
   color: #333;
+  display: block; // garante que o host ocupa largura total
 }
 
 /* Header */
@@ -52,7 +52,6 @@ body {
   padding: 40px;
   background: #fff;
   border-radius: 20px;
-  //box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
 }
 
 /* Título */
@@ -62,7 +61,7 @@ body {
   color: #1e2772;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  // text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Tabela */
@@ -125,7 +124,6 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
-  //box-shadow: 0px 6px 12px rgba(253, 116, 1, 0.2);
 }
 
 .btn-registrar:hover {

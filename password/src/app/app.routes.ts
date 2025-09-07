@@ -5,10 +5,28 @@ import { Dashboard } from './views/dashboard/dashboard';
 import { Cadastro2 } from './views/cadastro-2/cadastro-2';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: Home },
-  { path: 'cadastro_1', component: Cadastro1 },
-  { path: 'dashboard', component: Dashboard },
-  { path: 'cadastro_2', component: Cadastro2 }
+  { 
+    path: '', 
+    component: Home, 
+    title: 'Login' 
+  },
+
+  { 
+    path: 'cadastro', 
+    component: Cadastro1, 
+    title: 'Cadastro' 
+  },
+
+  { 
+    path: 'dashboard', 
+    component: Dashboard, 
+    title: 'Dashboard' 
+  },
+
+  { 
+    path: 'registro-senha', 
+    component: Cadastro2, 
+    title: 'Registro de Senha' 
+  }
 ];
 
