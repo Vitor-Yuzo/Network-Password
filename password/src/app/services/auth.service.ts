@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private baseUrl = 'http://localhost:8080'; // seu backend
+  private baseUrl = 'http://10.0.0.20:8080';
 
   constructor(private http: HttpClient) {}
 
@@ -16,7 +16,7 @@ export class AuthService {
     return this.http.post(`${this.baseUrl}/auth/login`, { email, password });
   }
   getPasswords(): Observable<any[]> {
-    const token = localStorage.getItem('token'); // pega o token salvo
+    const token = localStorage.getItem('token');
     if (!token) {
       throw new Error('Token não encontrado');
     }
