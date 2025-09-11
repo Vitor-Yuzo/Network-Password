@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private baseUrl = 'http://10.0.0.20:8080';
+  private baseUrl = 'back-end';
 
   constructor(private http: HttpClient) {}
 

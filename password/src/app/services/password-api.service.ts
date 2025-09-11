@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class PasswordService {
  
-  private baseUrl = 'http://10.0.0.20:8080';
+  private baseUrl = 'back-end';
 
   constructor(private http: HttpClient) {}
 
